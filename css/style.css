@@ -28,6 +28,7 @@ h1 {
 }
 .form__field {
     margin-bottom: 20px;
+    position: relative;
 }
 .form__field label {
     color: #777;
@@ -44,6 +45,7 @@ h1 {
 }
 .form__input::placeholder {
     font-size: 14px;
+    font-weight: 300;
 }
 .form__input:focus {
     outline: 0;
@@ -73,4 +75,44 @@ h1 {
     padding: 10px;
     margin-top: 20px;
     width: 100%;
+}
+
+.form__checkbox {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+}
+.form__checkbox.success {
+    border-color: #2ecc71;
+}
+.form__checkbox.error {
+    border-color: #e74c3c;
+}
+
+#checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.label-checkbox {
+    position: relative;
+    padding-left: 20px;
+}
+.label-checkbox:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border: 1px solid #cecece;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    color: white;
+}
+#checkbox:checked ~ .label-checkbox:after {
+    content: '🗸';
+    font-size: 13px;
+    background: #3498db;
 }

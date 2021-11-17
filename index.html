@@ -9,37 +9,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Form Validation</title>
 </head>
-<body>
 
+<body>
 
     <div class="wrapper">
         <form class="form" id="form">
-        <h1>Form Validation</h1>
-          <div class="form__field">
-            <label>Логин</label>
-            <input maxlength='15' type="text" class="form__input" id="login" placeholder="Введите логин" name='Логин'>
-            <small>Error Message</small>
-          </div>
-          <div class="form__field">
-            <label>Почта</label>
-            <input maxlength='40' type="text" class="form__input" id="email" placeholder="Введите почту" name='Почта'>
-            <small>Error Message</small>
-          </div>
-          <div class="form__field">
-            <label>Пароль</label>
-            <input maxlength='30' type="password" class="form__input" id="password" placeholder="Введите пароль" name='Пароль'>
-            <small>Error Message</small>
-          </div>
-          <div class="form__field">
-            <label>Пароль еще раз</label>
-            <input maxlength='30' type="password" class="form__input" id="passwordRepeat" placeholder="Повторите пароль" name='Подтверждение пароля'>
-            <small>Error Message</small>
-          </div>
-          <button class="form__btn">Зарегистрироваться</button>
+            <h1>Form Validation</h1>
+            <div class="form__field">
+                <label>Логин</label>
+                <input maxlength='15' type="text" class="form__input" id="login" placeholder="Введите логин" name='Логин'>
+                <small>Error Message</small>
+            </div>
+            <div class="form__field">
+                <label>Почта</label>
+                <input maxlength='40' type="text" class="form__input" id="email" placeholder="Введите почту" name='Почта'>
+                <small>Error Message</small>
+            </div>
+            <div class="form__field">
+                <label>Телефон</label>
+                <input maxlength='21' inputmode="tel" type="text" class="form__input" id="phone" placeholder="Введите телефон" name='Телефон'>
+                <small>Error Message</small>
+            </div>
+            <div class="form__field">
+                <label>Пароль</label>
+                <input maxlength='30' type="password" class="form__input" id="password" placeholder="Введите пароль" name='Пароль'>
+                <small>Error Message</small>
+            </div>
+            <div class="form__field">
+                <label>Пароль еще раз</label>
+                <input maxlength='30' type="password" class="form__input" id="passwordRepeat" placeholder="Повторите пароль" name='Подтверждение пароля'>
+                <small>Error Message</small>
+            </div>
+            <div class="form__field">
+                <input type="checkbox" class="form__input" id="checkbox" name='Согласие на обработку персональных данных'>
+                <label class="label-checkbox" for='checkbox'>Согласие на обработку персональных данных</label>
+                <small>Error Message</small>
+            </div>
+            <button class="form__btn">Зарегистрироваться</button>
         </form>
-      </div>
-
+    </div>
 
 </body>
 <script src="js/script.js"></script>
+
 </html>
